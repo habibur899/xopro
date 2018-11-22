@@ -1,0 +1,559 @@
+/*
+Template Name: Xopro
+Template URI: https://habibur.ml
+Author: Habibur Rahman
+Author URI: https://habibur.ml
+Description: Full Responsive Web Template
+Version: 1.0
+*/
+
+/*
+--------------------
+Table of Content
+--------------------
+1. Common
+2. Nav
+3. Banner
+4. About
+5. Service
+6. Video
+7. Portfolio
+8. Priceing
+9. Counter
+10. Testimonial
+11. Contact
+12. Footer
+*/
+
+/* =======================================================
+1. Common
+========================================================== */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-padding {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.title h3 {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.title h3::before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 2px;
+    background: #888;
+    bottom: -30px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.title p {
+    color: gray;
+    font-size: 18px;
+}
+
+.bg-ash {
+    background-color: #f8f8f8;
+}
+
+/* =======================================================
+2. Nav
+========================================================== */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.navbar.bg-dark {
+    background-color: transparent !important;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.is-sticky .navbar.bg-dark {
+    background-color: #343a40 !important;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/* =======================================================
+3. Banner
+========================================================== */
+.banner-area {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner-area::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.banner-content h1 span {
+    color: #f1c40f;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.banner-content p {
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.banner-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.banner-content h3 span {
+    color: #f1c40f;
+    font-size: 40px;
+}
+
+/* =======================================================
+4. About
+========================================================== */
+.about-img {
+    -webkit-box-shadow: -20px 20px 0px #222;
+            box-shadow: -20px 20px 0px #222;
+}
+
+.about-text h3 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.about-text p {
+    font-size: 15px;
+    color: gray;
+    line-height: 1.85;
+    margin: 25px 0;
+}
+
+.about-text .btn {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-text .btn:hover {
+    background-color: #f1c40f;
+}
+
+/* =======================================================
+5. Service
+========================================================== */
+.single-service {
+    padding: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 10px #ccc;
+            box-shadow: 0px 0px 10px #ccc;
+    margin: 15px 0px;
+}
+
+.single-service:hover h3,
+.single-service:hover i {
+    color: #f1c40f;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+
+.single-service p {
+    color: gray;
+}
+
+/* =======================================================
+6. Video
+========================================================== */
+.video-area {
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.video-area::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+.video-cover {
+    padding: 100px 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.video-top {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.video-cover h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.video-btm {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.video-cover i {
+    color: #f1c40f;
+}
+/* =======================================================
+7. Portfolio
+========================================================== */
+.single-portfolio{
+	position: relative;
+	margin: 15px 0px;
+}
+.single-portfolio::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0,.8);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.single-portfolio:hover::before{
+	visibility: visible;
+	opacity: 1;
+}
+.single-portfolio .single-content{
+	position: absolute;
+	bottom: 0px;
+	left: 20;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	visibility: hidden;
+	opacity: 0;
+}
+.single-portfolio .single-content h4{
+	color: #fac40f;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.single-portfolio .single-content p{
+	font-size: 13px;
+}
+.single-portfolio:hover .single-content{
+	bottom: 30px;
+	visibility: visible;
+	opacity: 1;
+}
+.filter-btn{
+	margin-bottom: 35px;
+}
+.filter-btn button{
+	border:0px;
+	background-color: #222;
+	color: #fff;
+	padding: 10px 25px;
+	font-size: 13px;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.filter-btn button:hover{
+	background-color: #fac40f;
+	color: #222;
+}
+/* =======================================================
+8. Priceing
+========================================================== */
+.single-price{
+	margin: 15px 0px;
+	font-family: 'Poppins', sans-serif;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 15px #ccc;
+	        box-shadow: 0px 0px 15px #ccc;
+	padding: 30px;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.single-price h5{
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #bbb;
+}
+.single-price h2{
+	font-weight: 700;
+	color: #000;
+	font-size: 50px;
+	margin: 25px 0;
+}
+.single-price span{
+	font-size: 18px;
+}
+.single-price p{
+	font-size: 14px;
+	color: gray;
+}
+.single-price ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.single-price ul li{
+	padding: 15px 0px;
+	font-weight: 500;
+}
+.single-price.active{
+	background-color: #fac40f;
+}
+.single-price.active h5,
+.single-price.active p{
+	color: #fff;
+}
+.single-price:hover{
+	-webkit-box-shadow: 0px 0px 45px #888;
+	        box-shadow: 0px 0px 45px #888;
+}
+/* =======================================================
+9. Counter
+========================================================== */
+.counter-area{
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.counter-area::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color:rgba(0,0,0,.8);
+}
+.single-counter{
+	margin: 100px 0px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.single-counter i{
+	margin-bottom: 35px;
+	color: #fac40f;
+}
+.single-counter h3{
+	font-weight: 600;
+}
+.single-counter p{
+	font-size: 14px;
+}
+/* =======================================================
+10. Testimonial
+========================================================== */
+.single-testimonial{
+	padding: 50px 15px;
+	border:1px solid #f1f1f1;
+	position: relative;
+}
+.single-testimonial::before{
+	content: "\f10d";
+	position: absolute;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600;
+	height: 100px;
+	width: 100px;
+	border:1px solid #f1f1f1;
+	color: #222;
+	line-height: 75px;
+	text-align: center;
+	font-size: 50px;
+	top: -1px;
+	left: -1px;
+}
+.single-testimonial img{
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.single-testimonial p{
+	max-width:600px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: gray;
+}
+.single-testimonial h3{
+	margin-top: 20px;
+	font-weight: 700;
+}
+.single-testimonial .company{
+	color: #fac40f;
+	font-size: 18px;
+}
+.owl-carousel .owl-item img{
+	width: inherit;
+}
+/* =======================================================
+11. Contact
+========================================================== */
+.contact-item{
+	background-color: #fff;
+	padding: 15px 15px 15px 80px;
+	-webkit-box-shadow: 0px 0px 10px #ccc;
+	        box-shadow: 0px 0px 10px #ccc;
+	position: relative;
+	margin: 15px 0px;
+}
+.contact-item i{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color:#222;
+	color:#fff;
+}
+.contact-item p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: gray;
+	line-height: 25px;
+	font-weight: 500;
+}
+.contact-form{
+	margin: 15px auto;
+	max-width: 600px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 10px #ccc;
+	        box-shadow: 0px 0px 10px #ccc;
+	padding: 30px;
+}
+.contact-form .form-control{
+	border-radius: 0px;
+	height: 50px;
+	border-width: 2px;
+}
+.contact-form .form-control:focus{
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	border-color: #888;
+}
+.contact-form textarea.form-control{
+	height: 250px;
+	resize: none;
+}
+.contact-form button{
+	border-radius: 0;
+}
+.contact-form button:hover{
+	background-color:#fac40f;
+	color: #222;
+}
+/* =======================================================
+12. Footer
+========================================================== */
+footer{
+	padding: 50px 0px;
+	background-color: #222;
+	color: #f1f1f1;
+	font-family: 'Poppins', sans-serif;
+}
+.footer-social{
+	text-align: right;
+}
+.footer-social a{
+	color: #fff;
+	font-size: 24px;
+	margin: 0px 5px;
+}
+.footer-social a:hover{
+	color: #fac40f;
+}
+
+/*
+====================================================
+END
+====================================================
+*/
